@@ -18,3 +18,8 @@ resource "aws_ssm_parameter" "database_subnet_ids" {
   type  = "StringList"
   value = join(",", module.vpc.database_subnet_ids)
 }
+resource "aws_db_subnet_group" "roboshop" {
+  name = "/${var.project}/${var.environment}/aws_db_subnet_group_ids"
+  type = "stringList"
+  value = join(",",module.vpc.aws_db_subnet_group_ids)
+}

@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket = "remote-state-sam-devops"
-    key    = "terraform-eks-sg"
+    key    = "terraform-eks-sg-rules"
     region = "us-east-1"
     encrypt = true
     use_lockfile = true 

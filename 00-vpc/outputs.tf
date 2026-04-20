@@ -10,3 +10,6 @@ output "private_subnet_ids" {
 output "database_subnet_ids" {
     value = module.vpc.database_subnet_ids
 }
+output "aws_db_subnet_group_ids" {
+    value = modeule.vpc.aws_db_subnet_group_ids
+}
